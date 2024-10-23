@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Social Media Dashboard</h1>
+
+        <div class="stats-grid">
+            <div class="stat-box" id="followers">
+                <h2>Total Followers</h2>
+                <p id="total-followers">15,350</p>
+            </div>
+            <div class="stat-box" id="new-followers">
+                <h2>New Followers</h2>
+                <p id="new-followers-count">1,200</p>
+            </div>
+            <div class="stat-box" id="likes">
+                <h2>Total Likes</h2>
+                <p id="total-likes">7,800</p>
+            </div>
+            <div class="stat-box" id="comments">
+                <h2>Total Comments</h2>
+                <p id="total-comments">300</p>
+            </div>
+        </div>
+
+        <!-- Graph container -->
+        <div class="chart-container">
+            <canvas id="socialMediaChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
